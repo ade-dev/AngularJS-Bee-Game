@@ -1,0 +1,31 @@
+{
+  "name": "angular-bee-game",
+  "version": "0.0.0",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "description": "Bee Game developed with AngularJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ade-dev/AngularJS-Bee-Game"
+  },
+  "author": "Ade Oyebadejo",
+  "keywords": [
+    "angularjs",
+    "css3",
+    "sass",
+    "bootstrap 4",
+    "html5",
+    "responsive"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.5.2",
+    "bootstrap": "^4.0.0-alpha.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "lite-server": "^2.1.0"
+  }
+}

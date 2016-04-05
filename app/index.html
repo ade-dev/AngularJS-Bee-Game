@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/master.css" rel="stylesheet" type="text/css" />
+    <script src="js/vendor/angular.js" type="text/javascript"></script>
+    <script src="js/controllers.js" type="text/javascript"></script>
+    <title></title>
+  </head>
+  <body ng-app="beeGame">
+    <div  class="container-fluid bee-game" ng-controller="GameCtrl">
+      <div class="row game-panel">
+        <div class="col-md-12">
+          <h1>The Bee Game</h1>
+          <ul>
+            <li ng-repeat="bee in bees" ng-class="{'bee-inactive': bee.active === false, 'bee-hit': bee.hit === true}">
+              <div>
+                <h3>{{bee.type}}</h3>
+                <p class="mid">{{bee.life_span}}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row game-control">
+        <div class="col-md-12">
+          <form method="post" data-ng-submit="play()">
+            <input type="submit" name="hitbee" value="Play" ng-disabled="isQueenActive === false">
+          </form>
+        </div>
+      </div>
+      <div class="row game-result" ng-show="isQueenActive === false">
+        <div class="col-md-12">
+          <div class="result-container">
+           <h2>Game over!</h2>
+            <p>You scored <span>{{score}}</span> points</p>
+            <p class="reset-msg">The game will reset in few secounds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+.bee-game {
+  max-width: 1150px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #999999;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+.game-panel {
+  margin-top: 20px;
+}
+.game-panel ul {
+  display: table;
+  margin: 30px auto 0px auto;
+  padding: 20px 0px 0px 0px;
+}
+.game-panel li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 15px 0px 15px;
+  padding: 0px;
+  color: #008000;
+}
+.game-panel li.bee-inactive {
+  color: red;
+}
+.game-panel li.bee-hit {
+  color: red;
+}
+.game-panel li div p {
+  text-align: center;
+}
+
+.game-control {
+  margin-top: 30px;
+}
+
+form {
+  display: block;
+}
+form input {
+  display: block;
+  height: 28px;
+  margin: 0px auto;
+  padding: 0px 30px;
+  outline: none;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(center top, whitesmoke, #f1f1f1);
+  background-image: linear-gradient(center top, whitesmoke, #f1f1f1);
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+}
+form input:active {
+  background-color: #a9db80;
+  background-image: -webkit-linear-gradient(center top, #a9db80, #96c56f);
+  background-image: linear-gradient(center top, #a9db80, #96c56f);
+  border: 1px solid #8bcf54;
+}
+
+.game-result {
+  margin-top: 30px;
+}
+.game-result h2 {
+  text-align: center;
+  color: #008000;
+}
+.game-result .result-container {
+  margin-top: 50px;
+}
+.game-result .result-container p {
+  margin: 0px;
+  text-align: center;
+}
+.game-result .result-container p span {
+  font-weight: bold;
+}
+.game-result p.reset-msg {
+  color: #999999;
+  text-align: center;
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .game-panel li:first-child {
+    margin: 0px 10px 0px 0px;
+  }
+  .game-panel li:last-child {
+    margin: 0px 0px 0px 10px;
+  }
+}
