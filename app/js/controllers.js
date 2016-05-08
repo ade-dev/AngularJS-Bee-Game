@@ -42,7 +42,7 @@ beeGame.controller('GameCtrl', function($scope, $timeout) {
     $scope.score = 875;
   }
   $scope.updateResultView = function() {
-    $scope.isQueenActive = false
+    $scope.isQueenActive = false;
   }
   $scope.updateScore = function() {
     if($scope.bees[$scope.pos].active === false) {
